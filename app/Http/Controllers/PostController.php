@@ -10,7 +10,8 @@ class PostController extends Controller
 {
     public function index()
     {
-        return Post::paginate(20);
+        return Post::where('is_published', 1)
+            ->paginate(20);
     }
 
     public function store(PostRequest $request)

@@ -13,7 +13,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return Category::paginate(20);
+        return Category::where('is_published', 1)
+            ->paginate(20);
     }
 
     /**

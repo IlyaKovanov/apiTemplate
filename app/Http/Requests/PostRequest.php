@@ -25,7 +25,7 @@ class PostRequest extends FormRequest
             'title' => 'string|required',
             'content' => 'string',
             'image' => 'string',
-            'likes' => 'integer|nullable'
+            'category_id' => 'integer|nullable',
         ];
     }
 }

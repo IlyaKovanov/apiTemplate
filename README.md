@@ -5,3 +5,5 @@
 В PostController реализован CRUD
 
 добавлен docker-compose для подключения DB, phpMyadmin, redis, mailHog
+
+добавлены методы регистрации и авторизации пользователя, получение jwt токена
